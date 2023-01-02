@@ -11,7 +11,7 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -56,5 +56,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     port: 8000
+  },
+  optimization: {
+    minimize: false
   }
 };
