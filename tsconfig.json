@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "ES6",
+      "strict": false,
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "types": ["@types/wicg-file-system-access"]
+    },
+    "exclude": [
+      "node_modules"
+    ]
+}

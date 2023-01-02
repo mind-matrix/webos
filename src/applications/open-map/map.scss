@@ -1,0 +1,9 @@
+main {
+    & > div, & > div > div, #map {
+        height: 100%;
+    }
+}
+
+#map {
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+.clock {
+    padding: 10px 20px;
+    width: max-content;
+    margin: 0 auto;
+    background-color: rgba(87, 87, 87, 0.5);
+    border-radius: 8px;
+    color: white;
+    backdrop-filter: blur(4px);
+    time {
+        display: block;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 1.2em;
+        &[datetime=date] {
+            font-size: 1.4em;
+            font-weight: bolder;
+        }
+    }
+}

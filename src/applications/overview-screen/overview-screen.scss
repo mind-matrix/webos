@@ -1,0 +1,38 @@
+body, body:fullscreen, body::backdrop {
+    background: url(../../assets/images/default-homescreen.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+
+    .applicationOverview {
+        height: 100%;
+
+        #applications {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            overflow-x: auto;
+    
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            
+            figure {
+                height: min-content;
+                transition: all 4ms;
+
+                img {
+                    width: 240px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

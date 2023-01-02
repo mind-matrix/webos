@@ -1,0 +1,19 @@
+.apps {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+
+    figure {
+        width: min-content;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 20px;
+    
+        img {
+            max-width: 100%;
+            width: auto;
+            height: 30px;
+            margin: 0 auto;
+        }
+    }
+}

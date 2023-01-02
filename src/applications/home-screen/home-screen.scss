@@ -1,0 +1,14 @@
+body, body:fullscreen, body::backdrop {
+    background-image: url(../../assets/images/default-homescreen.jpg);
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+main {
+    background: transparent;
+    overflow: hidden;
+
+    .clock {
+        margin-top: 30px;
+    }
+}

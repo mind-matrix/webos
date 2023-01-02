@@ -1,0 +1,103 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    font-size: 0.8em;
+    color: white;
+    z-index: 99998;
+
+    .time_display {
+        float: left;
+        font-size: small;
+        padding-left: 10px;
+    }
+
+    #notificationpanel {
+        .fullscreen_notification_panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - var(--navigation-panel-height, 0));
+            transform: translate3d(0, calc(var(--navigation-panel-height, 0) - 100vh), 0);
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            transition: all 0.5s;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+            #brightnessSlider {
+                display: block;
+                width: calc(100% - 30px);
+                margin: 0 auto;
+                margin-top: 30px;
+                appearance: none;
+                background: #0a85ff;
+                height: 3px;
+                outline: none;
+
+                &::-webkit-slider-thumb {
+                    appearance: none;
+                    width: 32px;
+                    height: 32px;
+                    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFMklEQVR4nO2bWWxUZRTHb6EQFESwFIRIq7xBBKMPjSDaWmoiMW4PCgWNLyrRF+NG3KJGH4yJVh9cUNSnpi4RW1uBSAiRt5bFiCDY1mJapS3ttMOUttNpp/Mz5/b7pnemM3U63mVw5p+c5OYu3zn/c7/l3POdaxg55OAJgHzgI+BDOTayDcAGJrHeyDYAZRYHlBnZBnIOINcDyA2B7J4Dbprkz41GJgPIA+4F1trc7mPAoza3uVbZmmdno/erNzUijRsZCkVcbBTcZ3d3DamGR4HKNNqYC2wEngCqgBqgVkmNOifXbpF702i/UtmGstXeYQWUAxeVgvFUui5wGbAd2AsMkzrk3gZgm7SRgp6HgDH17BBwp23ErQBuBQJKUQR4Jsl9VwCvAj2J2A2FI/wxGOZY/5gpciznkuA88AqwIImuJ9ULEQwCmwwnAZQAfRYDKxK8jU4rg96RcXa1BXmgMcDKvT6Mb3sSStE+Hw82BvjkbBBfSHOK4pz0iDhdpZbrYlOJo+Q1gHVAl/J8qTp3JfCN1eKj/WMm6TnfJSY8ncgzWxoDHPfrnh3FV8BCpXO9skFsucFwE8Ai4Dp1XASc0hZ2BsepbAqQN0PSiUTa2H4kQFcwpkf8Kjotuhe5St4K4FqgQ1v2fWeIJQ3Ju3m6Utjgo6FTL0Qm2oFiw0sAhUCbtuidlmFm7bGXuFWk7aqWmMWkFSjwivws4Edtybstw44Rj5e3fpeVLoqDwGwvHPCctqC6fcQ18lpqOnTAZ+Jpt8kXq4CDMwNhLq/tdd0B8+t6ab4Y1g6QAO0aNx2wW7RK6LLxJ7/r5LWUHfabNijscov8Ch1z155zv+vHS/3kyiAHy91wwEtaY8mhfs8dcPMhv3Uu2OmGA06Ipl8ujHlOXsvJQDRaPO40+WVq6PPab4OeE9fyxunosijh4lInHXC31nSbh5NfosnQgrucdMBOrWVxvftLXzIpqPdZHfBsujN7RRJZY7nvfdHQH4p4TjpeLoxGF8T3LPaumYbXCn1TgSXJkQgRnWQAvpAT7UPjnhOOl47h6Nfi58pWIZk0y6I4F6TqgPJL0AGbUnDAVboXLJ+mq6yOHwL+0UtmCKyehtfMg6b/7SSYzjJYejhzlsHbXVwGl+px9frpIc+Ja3nzTEwgVOiYAwQSBYumExkUCp+aDIWPGU4DeCGDP4aed/VzuC4DPoctiVI5uNpxBwiAT3WA4OU3QXns5Pex4RaYyMXLNpSZlpL0lNvkF9T10upVSkwg+4JauyQo3SQvmyVf/xWTFH3K8Cgtvj8afrW6lxZ/uzkmLX7Ak7S4AFiiNidMVDm8MTJ7T4/paAuao/G8V2AiRS7bVCZ+6AqZ21h2k1/W4GN/95StsSIviS8GVlkmxZPasu6RcR4+MmDL5qj0qEeODnB+JGZzVPKSK5XuVWKL2+TXJdgeXwh8abXyZ/8YW5sCzE1je1ye2dYUMJOvcaiWAgxLraG72+P8e4FEpSpmiKIvFGH32aDpjOJ9fQl7hpyTa7Kt/tmfQfOZOPwNbInTdYerBRJMLZFJuCcn5SzAy6q8ZQqC4Qhtg2Gz+EFEjuVcEnQDLwLzUyyRqXCK/GZLoVM4xSKpecBWKRvQgVOKkHvr1LPzZlgkZX8pHxNj/r+Wyc1R/wjskFICNZZ1mVy1OrdDlb3kZ1SZHBNv3xnvOlcoaXsv2OxAqezjUi5rc5vXA/fYWiprZHuxtBPI/TFC7o+Rsmz/YaIs54As7wEbsv3HyXzgAyXZ9+tsDkZm4B93OjZ9dJ4nlgAAAABJRU5ErkJggg==);
+                    background-size: contain;
+                    background-position: center;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+
+            #notifications {
+                width: 100%;
+                border-radius: 32px;
+                min-height: 120px;
+                margin-top: 40px;
+                background-color: rgba($color: #313131, $alpha: 0.7);
+                padding-top: 32px;
+                padding-left: 10px;
+                padding-right: 10px;
+                text-align: center;
+
+                .notification {
+                    height: 150px;
+                }
+            }
+        }
+
+        .notificationpanel_indicators {
+            margin: 0;
+            padding: 0;
+            float: right;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            li {
+                list-style: none;
+                display: inline-block;
+                padding-left: 2px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                img {
+                    width: auto;
+                    height: var(--notification-panel-height, auto);
+                    filter: invert(100%);
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

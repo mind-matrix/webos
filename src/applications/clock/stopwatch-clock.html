@@ -1,0 +1,36 @@
+<div>
+    Simple Calculator
+    <div id="expression"></div>
+    <div class="action-container">
+        <div class="app-actions">
+            <button x-link x-target="/scientific">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVR4nO2VTUoEMRBG30oQvIO6czGu1CN4IT2LP9dQb6Frca2LkcxOmaXwyUCEJkTGyUjSla4HBU06i3pVlQQce+wCl8ATsATUOIo4BF5GkLy2EVl14nkEiWtbkYsRJK3/EHnsRWTZi4imKPKDi+AdWc8kRuuvlCYgF5nqaMlF8I6oxmjVjI1pnbBcJGFdZa6BkFkP8Z+JjlzFPbNEJsQ14p7SBFRLZAEcx31HwDyz9m5BREn1Z8l3sDJaynTmt06YFZlbEwk9jNYic7BzF0BpAqol0s31q14eRDWMjWmdsFwkoXXl5R1JaF15eUcShhW5A06BHQyiGPcYRzFOMM5XFNnDOG+9dOS2lzNyAHxGmQfgzOqtteIc+BjBI6hBFLMP3ACvgwvApIhDRb4Bbk87Bh5ZEJQAAAAASUVORK5CYII=">
+            </button>
+            <button x-link x-target="/conversion">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEn0lEQVR4nMWaS4gdRRSGPzVRMTP4ICQ3GoiGIPhAREVdKL7AhboYF0pEDEJijCQKIrpQI2PAEJcKmpjBpeBiFupsRF0oZtQRX6AmQsQ4EkbGV9REnYljWk7zt5RN376nqnvuHDhw7+2q0/VX1Xn8VRf8MgjcAewGPgR+AI5K7fOEnq1V2zakA2xuyRYrgJ3AH0DmVGs7AqxpCGKf7G1pAuAkYBtwJAJAWW21dshWKoh9+p4kS4F3GgAo63sRg1kOfKF+XwFnpoK4EPiuRRCFTsp2X1aiM08gQjA241WyDNjbo79t80+AJ7VrKuVkbYFsnnVPF5/xAAn1V2CoCsi2xIHZLP0e2Wd74tZaAlwHjKnNP2UwKyKj0yHgYeCswMZK4HE969V/FlidCKaQx4Kx/LfNdkaAMB86V/0uAx4C7g2iy3maqV52XqC7dJxgipUZRlnYm+zmgMtlxBzuWPDsT2Xh0YgtOdAwIV6v5xYA8rLDuxovycA1LTn+7TVAPCXKoOyYj+b1kffFN8nA6y0B2UVzyaR5Aeh56W8Km4uBg8AvFToXCeSDNoH86HjhOofBlYpGMUCm2wQy63jhK8A96mgR66MKPZCwtWb6DWQUuFodTwNuq9DvnYM/oNB7l8J3X7fWgwGQRcDGkg736G++8zJwFXBcC4OvBDLhnMn9QeevI7bPm8D5/WCau50DsuS3Sn2ed7T/C7ivn0xzbYThJ9RnlTJ5VRvzucMq7vrKNAcjZulQUPfcWdHPVvcR4Eq16bRMDcZr+EwuIxHG3gfOUL/lWlHLMxfot+MXkmmu0fLFGNtYmp1OUAQuJNNkR6LRI/KJca1GCtMcjSxesxqmmf84ngjG+MdFiUzTVu4BEa3PWmKa+XJNJgB5NYFpfgPcWDGGS4AvnTbqmGbuSLFgro1kmgeD6Hep6jc7fChCtgWTKaetOqaZr8wep6Ep+UZMGL9b79mqRLsJuFjPntazdS0xzdxntjuKymJGvM56VAFhUWA7BHJMCXewJunGMs1cVmuw3fb++shS5ye1PyU4pAiBZIqCMUQtimkOCPkuMbtpzWhxGOFlmn8HW2G0C5AshWkWX5qKhw6UfcRo8/3ALQ2BTLcJJIbmHhaxKsoZxFOuAJ5NOLmcWSgghVqYfy448CtkWeS1xsxCba2ymo/coOK1SHCnKjD0fWtNNARih9GZclFR7jwTUZG3BsQbfo1dng682AVIpjMCVIO5w2/hWHXZcbPj9sjLNN9S+/U1QDZEFqB2isOn+lLUOWXZ4rwK85YoltnPBk4AXqsAMq2TfYtinzsj4JLiVD3TEX3Te72RiJOVxRrszQq7Vjw+Gtx1bIotGpfqGivT5UkTMDFM8w2tTFWNt9VZnljYPSfsPBTUPWO6dxhIBBPDNOdUZd+qzD4G/BzR/6mqAQw5r80K3avE1QbTHC45e+bQd4ETu0xmvs3MZz6WE6UASWGaU5Gnl9/WvLunxF7mpzDNzKGTwdFTtKT+rcJW+O1+HtDN598qvEyzTmfl2F19wiPehNiUaVap+an1+V+IbSKeEsUr3ZimqX223+w0xsqOPGN75F/88qUlxokdCgAAAABJRU5ErkJggg==">
+            </button>
+        </div>
+        <div class="button-panel">
+            <div class="button operator">AC</div>
+            <div class="button operator">⌫</div>
+            <div class="button operator">+/-</div>
+            <div class="button operator">/</div>
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button operator">*</div>
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button operator">-</div>
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button operator">+</div>
+            <div class="button operator">%</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
+            <div class="button operator">=</div>
+        </div>
+    </div>
+</div>

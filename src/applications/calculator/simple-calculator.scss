@@ -1,0 +1,57 @@
+#expression {
+    padding-top: 20px;
+    height: 108px;
+    font-size: 2.4em;
+    max-width: 100%;
+    word-break: break-all;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (orientation:landscape) {
+        height: 28px;
+    }
+}
+.action-container {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: var(--navigation-panel-height, 0);
+    width: 100%;
+
+    .app-actions {
+        button[x-link] {
+            background: transparent;
+            border: 0;
+            width: 30px;
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .button-panel {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+        .button {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border: 1px solid black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+
+            @media screen and (orientation:landscape) {
+                padding: 5px;
+            }
+
+            &.operator {
+                background-color: rgba(255, 132, 0, 0.8);
+                color: black;
+            }
+        }
+    }
+}
