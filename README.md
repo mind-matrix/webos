@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mind-matrix/webos">
-    <img src="images/WebOS.svg" alt="Logo" width="100%">
+    <img src="assets/WebOS.svg" alt="Logo" width="100%">
   </a>
 
   <h3 align="center">
@@ -70,7 +70,7 @@
 ## About The Project
 
 <figure align="center">
-    <img src="images/screenshot.png" height="240" width="auto" alt="Screenshot | WebOS Home Screen">
+    <img src="assets/screenshot.png" height="240" width="auto" alt="Screenshot | WebOS Home Screen">
     <figcaption>Screenshot | WebOS Home Screen</figcaption>
 </figure>
 

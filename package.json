@@ -19,7 +19,11 @@
     "boilerplate",
     "sass"
   ],
-  "author": "Tarek Jellali",
+  "author": "Sagnik Modak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mind-matrix/webos"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/html2canvas": "^1.0.0",
