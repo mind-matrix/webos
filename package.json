@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "npm run build:types && webpack --mode production",
-    "build:types": "rm -rf lib && tsc -d --declarationDir lib --declarationMap --emitDeclarationOnly",
+    "build": "npm run build:types && npm run build:target",
+    "build:target": "webpack --mode production",
+    "build:types": "npm run clean:types && npm run compile:types",
+    "compile:types": "tsc -d --declarationDir ../webos-types --declarationMap --emitDeclarationOnly",
+    "clean:types": "rm -rf ../webos-types/*.d.ts && rm -rf ../webos-types/*.d.ts.map",
     "lint": "eslint src/*.ts --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
