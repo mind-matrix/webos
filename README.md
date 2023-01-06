@@ -1,23 +1,7 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
 
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -85,7 +69,10 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://mind-matrix.github.io/webos)
+<figure align="center">
+    <img src="images/screenshot.png" height="240" width="auto" alt="Screenshot | WebOS Home Screen">
+    <figcaption>Screenshot | WebOS Home Screen</figcaption>
+</figure>
 
 **TL;DR** Tried to create an OS entirely in Typescript for fun. 😄
 
@@ -157,21 +144,27 @@ The following requirements are necessary for WebOS to work
 
 
 <!-- USAGE EXAMPLES -->
-<!-- ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-Working on it 🔧
-<!-- - [ ] Create Roadmap Section -->
+- [ ] System Design
+    - [ ] Create a Permission Manager
+    - [ ] Design a low-overhead Application Background Work Lifecycle
+    - [ ] Create drivers for Location, Bluetooth, Audio Input, Audio Output and Video Input
+- [ ] Update UI
+    - [ ] Fix lag on transitions for closing apps on Overview Screen
+    - [ ] Use HTML5 Semantic Elements for built-in Apps
+- [ ] Demos / Resources
+    - [ ] Complete Calculator, Clock and Settings Apps
+    - [ ] Create a Voice Assistant App
+        - [ ] Should be able to capture Audio and perform Speech Recognition
+        - [ ] Should be able to use Natively available Voice for Speech Synthesis
+        - [ ] Should be able to open Apps on the platform
+        - [ ] Should be able to work from background
+    - [ ] Update Documentation on GitHub
 
 See the [open issues](https://github.com/mind-matrix/webos/issues) for a full list of proposed features (and known issues).
 

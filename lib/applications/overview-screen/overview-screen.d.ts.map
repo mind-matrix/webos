@@ -1,0 +1,1 @@
+{"version":3,"file":"overview-screen.d.ts","sourceRoot":"","sources":["../../../src/applications/overview-screen/overview-screen.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,YAAY,CAAC;AAMzC,qBAAa,cAAe,SAAQ,WAAW;IAC3C,OAAO,CAAC,YAAY,CAAa;IACjC,OAAO,CAAC,MAAM,CAAC,gBAAgB,CAAM;;IAOrC,aAAa;IAWb,eAAe;IAKf,SAAS,IAAI,IAAI,GAAG,OAAO,CAAC,IAAI,CAAC;CA0EpC"}

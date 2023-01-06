@@ -6,9 +6,18 @@
       "sourceMap": true,
       "resolveJsonModule": true,
       "esModuleInterop": true,
-      "types": ["@types/wicg-file-system-access"]
+      "types": ["@types/wicg-file-system-access"],
+      "lib": [
+        "es2015",
+        "dom",
+        "dom.iterable",
+        "webworker.importscripts",
+        "scripthost",
+        "ESNext.AsyncIterable"
+      ]
     },
     "exclude": [
-      "node_modules"
+      "node_modules",
+      "lib"
     ]
 }

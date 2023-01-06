@@ -62,6 +62,11 @@ declare global {
     function requestIdleCallback(callback: any, options?: any): number;
 }
 
+export interface ExternalXApplicationManifest {
+    name: string,
+    scripts: string[]
+}
+
 export class WebOS {
     private applications: Map<string, typeof Application>
     private services: Map<string, ProcessDescriptor>
@@ -159,8 +164,8 @@ export class WebOS {
         this.applications.set(application.name, application)
     }
 
-    install(url: string) {
-        return new Promise<void>((resolve, reject) => {
+    async installScript(url: string) {
+        return await new Promise<void>((resolve, reject) => {
             const script = document.createElement("script")
             script.onload = () => {
                 resolve()
@@ -168,5 +173,31 @@ export class WebOS {
             script.onerror = reject
             script.src = url
         })
+    }
+
+    useStylesheet(url: string) {
+        const link = document.createElement("link")
+        link.rel = "stylesheet"
+        link.href = url
+        link.type = "text/css"
+        document.querySelector("head").appendChild(link)
+    }
+
+    unuseStylesheet(url: string) {
+        document.querySelector(`head > link[href="${url}"`).remove()
+    }
+
+    async install(manifestOrManifestUrl: string | object) {
+        let manifest: ExternalXApplicationManifest
+        if (typeof manifestOrManifestUrl === "string") {
+            const manifestUrl = manifestOrManifestUrl
+            manifest = await (await fetch(manifestUrl)).json()
+        } else {
+            manifest = manifestOrManifestUrl as ExternalXApplicationManifest
+        }
+        for (const scriptUrl of manifest.scripts) {
+            await this.installScript(scriptUrl)
+        }
+        this.register(window[manifest.name])
     }
 }
