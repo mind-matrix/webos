@@ -15,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/mind-matrix/webos">
-    <img src="https://mind-matrix.github.io/webos/assets/images/WebOS.svg" alt="Logo" width="100%">
+    <img src="src/assets/images/WebOS.svg" alt="Logo" width="100%">
   </a>
 
   <h3 align="center">
@@ -69,10 +69,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<figure align="center">
-    <img src="https://mind-matrix.github.io/webos/assets/images/screenshot.png" height="240" width="auto" alt="Screenshot | WebOS Home Screen">
-    <figcaption>Screenshot | WebOS Home Screen</figcaption>
-</figure>
+<div align="center">
+    <a href="https://github.com/mind-matrix/webos/tree/main/src/assets/images/screenshot.png">
+      <img src="src/assets/images/screenshot.png" height="480" width="auto" alt="Screenshot | WebOS Home Screen">
+      <p><em>Screenshot | WebOS Home Screen</em></p>
+    </a>
+</div>
 
 **TL;DR** Tried to create an OS entirely in Typescript for fun. 😄
 
@@ -226,7 +228,15 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
+<!-- RELATED PROJECTS -->
+## Related Projects
 
+Check out the following projects too -
+
+* [WebOS AppStore](https://github.com/mind-matrix/webos-appstore) - Sample AppStore Implementation for WebOS
+* [WebOS Types](https://github.com/mind-matrix/webos-types) - TypeScript Typings for WebOS (Useful for creating new Apps for WebOS in TypeScript)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
